@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đông Hokkaido 12/2026</title>
+<meta name="description" content="Hướng dẫn chuyến đi Đông Hokkaido 25–30/12/2026: bản đồ lộ trình, lịch trình từng ngày, nơi nghỉ, đồ cần mang và lưu ý lái xe mùa đông.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Đông Hokkaido giữa mùa tuyết · 25–30/12/2026">
+<meta property="og:description" content="Abashiri, bán đảo Shiretoko, các hồ núi lửa và hồ Akan. Bản đồ và lịch trình cho cả đoàn.">
+<meta name="theme-color" content="#28577A">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="snow" id="snow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="dates">25 – 30 tháng 12, 2026</p>
+    <h1>Đông Hokkaido giữa mùa tuyết</h1>
+    <p class="lead">Bốn người, hai chuyến bay, một chiếc xe. Từ cảng Abashiri dọc biển Okhotsk lên bán đảo Shiretoko, qua các hồ núi lửa và kết thúc bằng hai ngày với văn hoá Ainu bên hồ Akan.</p>
+    <div class="stats">
+      <div class="stat cd" id="countdown"><b>–</b><span>ngày nữa</span></div>
+      <div class="stat"><b>6</b><span>ngày</span></div>
+      <div class="stat"><b>5</b><span>đêm, 3 nơi nghỉ</span></div>
+      <div class="stat"><b>4</b><span>người</span></div>
+      <div class="stat"><b id="drive-total">~14</b><span>giờ lái xe</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="topnav" aria-label="Mục lục">
+  <div class="in" id="nav">
+    <a href="#doan">Cả đoàn</a>
+    <a href="#planner">Bản đồ</a>
+    <a href="#lichtrinh">Lịch trình</a>
+    <a href="#diemden">Điểm đến</a>
+    <a href="#noinghi">Nơi nghỉ</a>
+    <a href="#datcho">Đặt chỗ</a>
+    <a href="#hanhly">Hành lý</a>
+    <a href="#laixe">Thời tiết &amp; lái xe</a>
+    <a href="#khancap">Khẩn cấp</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="sec" id="doan" aria-labelledby="h-group">
+    <h2 class="sec-h" id="h-group">Cả đoàn gặp nhau thế nào</h2>
+    <p class="sec-sub">Hai nhóm bay từ hai nơi khác nhau và gặp nhau ở ga JR Abashiri chiều ngày 26/12.</p>
+    <div class="groups">
+      <div class="gcard">
+        <div class="who">Quân, Quỳnh và Cụ</div>
+        <div class="route"><span>HND<small>12:15</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>MMB<small>13:55</small></span></div>
+        <div class="note">Thứ Sáu 25/12. Đi bus vào Abashiri, sáng 26 tự đi các bảo tàng trên đồi Tento.</div>
+      </div>
+      <div class="gcard">
+        <div class="who">Trí</div>
+        <div class="route"><span>UBJ<small>07:45</small></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>MMB<small>13:00</small></span></div>
+        <div class="note">Thứ Bảy 26/12. Tự đi bus sân bay khoảng 30 phút vào ga JR Abashiri.</div>
+      </div>
+      <button class="gcard meet" data-goto="abashiri" type="button">
+        <div class="who">Điểm hội ngộ</div>
+        <div class="route"><span>13:45<small>Thứ Bảy 26/12</small></span></div>
+        <div class="note">Ga JR Abashiri. Nhận xe ở quầy thuê xe ngay trong ga rồi cùng đi Bảo tàng Dân tộc phương Bắc. Bấm để xem trên bản đồ.</div>
+      </button>
+    </div>
+  </section>
+
+  <section class="sec" id="planner" aria-labelledby="h-map">
+    <h2 class="sec-h" id="h-map">Bản đồ lộ trình</h2>
+    <p class="sec-sub">Chọn một ngày để xem chặng đi, bấm vào điểm trên bản đồ để xem chi tiết và mở Google Maps.</p>
+    <div class="tabs" id="tabs" role="toolbar" aria-label="Chọn ngày"></div>
+    <div class="pgrid">
+      <div class="mapcard" id="mapcard">
+        <svg id="map" viewBox="0 0 1200 1000" role="img" aria-label="Bản đồ lộ trình Đông Hokkaido"></svg>
+        <div class="legend" aria-hidden="true">
+          <div><svg width="30" height="8"><path d="M3 4H27" stroke="#5C8DB5" stroke-width="4" stroke-linecap="round"/></svg>Xe tự lái</div>
+          <div><svg width="30" height="8"><path d="M3 4H27" stroke="#8FB0CC" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.5 7"/></svg>Bus, tàu</div>
+          <div><svg width="30" height="16"><circle cx="15" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Điểm tham quan</div>
+        </div>
+        <div class="zoomctl">
+          <button type="button" id="zin" aria-label="Phóng to"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+          <button type="button" id="zout" aria-label="Thu nhỏ"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/></svg></button>
+          <button type="button" id="zfit" aria-label="Xem toàn bản đồ"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+        </div>
+      </div>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="sec" id="lichtrinh" aria-labelledby="h-days">
+    <h2 class="sec-h" id="h-days">Lịch trình từng ngày</h2>
+    <p class="sec-sub">Giờ giấc là dự kiến. Trời tối khoảng 16:00 nên các chặng lái dài đều xuất phát sớm.</p>
+    <div class="days" id="days"></div>
+  </section>
+
+  <section class="sec" id="diemden" aria-labelledby="h-places">
+    <h2 class="sec-h" id="h-places">Các điểm đến</h2>
+    <p class="sec-sub">Bấm vào một điểm để xem trên bản đồ. Ảnh minh hoạ từ Wikimedia Commons, phần lớn chụp vào mùa hè.</p>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="sec" id="noinghi" aria-labelledby="h-hotel">
+    <h2 class="sec-h" id="h-hotel">Năm đêm, ba nơi nghỉ</h2>
+    <p class="sec-sub">Ở liền 2 đêm tại Abashiri và hồ Akan, cả chuyến chỉ phải chuyển chỗ hai lần.</p>
+    <div class="hotels" id="hotels"></div>
+  </section>
+
+  <section class="sec" id="datcho" aria-labelledby="h-book">
+    <h2 class="sec-h" id="h-book">Những thứ cần đặt trước</h2>
+    <p class="sec-sub">Dịp cuối năm vùng này rất đông, các tour mùa đông giới hạn số người. Nên chốt càng sớm càng tốt.</p>
+    <div class="progress"><span id="book-count"></span><div class="bar"><i id="book-bar"></i></div></div>
+    <div class="list" id="bookings"></div>
+  </section>
+
+  <section class="sec" id="hanhly" aria-labelledby="h-pack">
+    <h2 class="sec-h" id="h-pack">Đồ cần mang</h2>
+    <p class="sec-sub">Đánh dấu những thứ bạn đã chuẩn bị. Phần đánh dấu chỉ lưu trên máy của bạn, mỗi người tự theo dõi.</p>
+    <div class="progress"><span id="pack-count"></span><div class="bar"><i id="pack-bar"></i></div><button type="button" class="linkbtn" id="pack-reset">Bỏ đánh dấu</button></div>
+    <div class="pack" id="pack"></div>
+  </section>
+
+  <section class="sec" id="laixe" aria-labelledby="h-drive">
+    <h2 class="sec-h" id="h-drive">Thời tiết và lái xe mùa đông</h2>
+    <p class="sec-sub">Đông Hokkaido cuối tháng 12 lạnh khô, nhiều nắng hơn phía tây nhưng đường thường đóng băng.</p>
+    <div class="two">
+      <div class="notes">
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--warm)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--warm)"/></svg><div><b>Bằng lái.</b> Người lái cần bằng lái Nhật, hoặc bằng lái quốc tế theo Công ước Geneva 1949. Bằng lái quốc tế cấp ở Việt Nam theo Công ước Viên 1968 không dùng được ở Nhật.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Đường băng.</b> Phanh sớm, giữ khoảng cách gấp đôi bình thường. Mặt đường trên cầu, trong hầm và đoạn khuất nắng hay có băng đen rất khó nhìn thấy.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Hươu băng qua đường.</b> Hươu Ezo rất nhiều ở vùng này, nhất là lúc chạng vạng. Thấy một con thì thường còn con khác theo sau.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Xăng.</b> Cây xăng ở vùng xa thưa và đóng cửa sớm. Giữ bình trên một nửa, đổ đầy ở Abashiri, Shari và Teshikaga.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Tuyết thổi mù đường.</b> Gặp gió tuyết mạnh thì bật đèn, giảm tốc, cần thì dừng ở trạm nghỉ michi-no-eki chờ bớt gió.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Đỗ xe qua đêm.</b> Dựng cần gạt nước lên để không bị đóng băng dính vào kính. Sáng ra nổ máy vài phút cho tan băng rồi hãy đi.</div></div>
+        <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div><b>Đường vào sâu Shiretoko đóng cửa mùa đông.</b> Đèo Shiretoko đóng, Ngũ Hồ Shiretoko không vào được tới 22/1. Tháng 12 đi rừng và thác Furepe theo tour snowshoe.</div></div>
+      </div>
+      <div class="wx">
+        <h3>Cuối tháng 12 ở Đông Hokkaido</h3>
+        <div class="wx-grid">
+          <div class="wx-cell"><b>−5 đến 0°C</b><span>Ban ngày, ven biển</span></div>
+          <div class="wx-cell"><b>−15°C</b><span>Sáng sớm vùng hồ, có thể lạnh hơn</span></div>
+          <div class="wx-cell"><b>~6:45</b><span>Mặt trời mọc</span></div>
+          <div class="wx-cell"><b>~15:45</b><span>Mặt trời lặn</span></div>
+        </div>
+        <p>Số liệu mang tính tham khảo. Vùng hồ Kussharo, Mashu và Akan nằm sâu trong đất liền nên lạnh hơn Abashiri và Utoro rất nhiều.</p>
+        <div class="btnrow" style="margin-top:14px">
+          <a class="ghost" href="https://info-road.hdb.hkd.mlit.go.jp/" target="_blank" rel="noopener">Tình trạng đường Hokkaido</a>
+          <a class="ghost" href="https://tenki.jp/forecast/1/" target="_blank" rel="noopener">Dự báo thời tiết</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sec-h" style="font-size:26px;margin-top:32px">Lưu ý khác</h3>
+    <div class="notes">
+      <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--warm)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--warm)"/></svg><div>Nhiều hoạt động mùa đông nổi tiếng chưa bắt đầu vào cuối tháng 12: tour Ngũ Hồ Shiretoko (từ 22/1), Ice Horizon Walk ở Notsuke (tháng 1 đến tháng 3), du thuyền đại bàng ở Rausu (mùa chính tháng 2 đến tháng 3). Lịch trình này chỉ chọn các tour chạy trong tháng 12.</div></div>
+      <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div>Gấu nâu ngủ đông nên không có tour ngắm gấu. Mùa đông hồ Kussharo có thiên nga về trú, dễ thấy ở Sunayu.</div></div>
+      <div class="note-r"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4"/><circle cx="12" cy="17" r=".6" fill="var(--accent2)"/></svg><div>Nhiều cửa hàng, nhà hàng ở vùng xa nghỉ sớm hoặc nghỉ dịp cuối năm. Mua sẵn đồ ăn nhẹ ở konbini trước các chặng lái dài.</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="khancap" aria-labelledby="h-sos">
+    <h2 class="sec-h" id="h-sos">Số khẩn cấp</h2>
+    <p class="sec-sub">Bấm để gọi trực tiếp từ điện thoại. Lưu thêm số cứu hộ của hãng xe thuê khi nhận xe.</p>
+    <div class="sos">
+      <a href="tel:110"><div class="num">110</div><div class="lb">Cảnh sát</div><div class="ds">Tai nạn giao thông, mất đồ</div></a>
+      <a href="tel:119"><div class="num">119</div><div class="lb">Cấp cứu, cứu hoả</div><div class="ds">Gọi xe cứu thương</div></a>
+      <a href="tel:%238139"><div class="num">#8139</div><div class="lb">JAF cứu hộ xe</div><div class="ds">Xe sa lầy tuyết, hết bình, hỏng xe</div></a>
+      <a href="tel:05038162787"><div class="num" style="font-size:26px;padding-top:6px">050-3816-2787</div><div class="lb">Japan Visitor Hotline</div><div class="ds">Tổng đài hỗ trợ du khách 24/7, có tiếng Anh</div></a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Chúc cả đoàn một chuyến đi thật nhiều tuyết.</p>
+  <div class="btnrow share" style="justify-content:center">
+    <button type="button" class="ghost" id="share">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7M16 6l-4-4-4 4M12 2v13"/></svg>
+      Chia sẻ trang này
+    </button>
+    <button type="button" class="ghost" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M6 14h12v7H6z"/></svg>
+      In lịch trình
+    </button>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/images.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
