@@ -135,33 +135,6 @@ const IMG = {
    "page": "https://commons.wikimedia.org/wiki/File:Mount_Oakan_and_Lake_Akan_(Jan._2006).jpg"
   }
  ],
- "mashu": [
-  {
-   "src": "assets/img/mashu-1.jpg",
-   "cap": "Hồ Mashu vào tháng 2",
-   "by": "Suicasmo",
-   "lic": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Lake_Mash%C5%AB_20200222-3.jpg"
-  }
- ],
- "kawayu": [
-  {
-   "src": "assets/img/kawayu-1.jpg",
-   "cap": "Núi lưu huỳnh Iozan",
-   "by": "Tzu-hsun, Hsu",
-   "lic": "CC BY-SA 4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Mount_Io_in_Teshikaga_02.jpg"
-  }
- ],
- "sunayu": [
-  {
-   "src": "assets/img/sunayu-1.jpg",
-   "cap": "Thiên nga ở Sunayu, hồ Kussharo",
-   "by": "K.F.",
-   "lic": "CC BY-SA 3.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Lake_kussharo_sunayu_with_swan.jpg"
-  }
- ],
  "bihoro": [
   {
    "src": "assets/img/bihoro-1.jpg",

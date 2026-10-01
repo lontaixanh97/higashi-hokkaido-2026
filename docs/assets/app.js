@@ -30,7 +30,7 @@ function smooth(keys){
   }
   return d;
 }
-const gmPlace=k=>`https://www.google.com/maps/search/?api=1&query=${S[k].lat},${S[k].lng}`;
+const gmPlace=k=>`https://www.google.com/maps/search/?api=1&query=${S[k].q?encodeURIComponent(S[k].q):S[k].lat+','+S[k].lng}`;
 const gmDir=keys=>'https://www.google.com/maps/dir/'+keys.map(k=>S[k].lat+','+S[k].lng).join('/');
 const ext='target="_blank" rel="noopener"';
 const icoPin='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-7.6 7-12a7 7 0 1 0-14 0c0 4.4 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>';
