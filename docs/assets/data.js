@@ -2,7 +2,7 @@
    DỮ LIỆU CHUYẾN ĐI — sửa file này để cập nhật website.
    - Tên khách sạn: trường `name` / `url` trong STAYS
    - Tình trạng đặt chỗ: trường `done` trong BOOKINGS
-   - Giờ của Trí: tìm "[Trí:"
+   - Chuyến nối về Ube của Trí: tìm "[Trí:"
    - Ảnh minh hoạ: file images.js
    ========================================================= */
 
@@ -55,17 +55,18 @@ const V = { teshikaga:[408,848], mid:[820,560] };
 
 /* Lịch trình từng ngày. drive = số giờ lái xe ước tính. cover = ảnh bìa [điểm, thứ tự ảnh]. */
 const DAYS = [
-  {id:'d19',date:'19/2',wd:'Thứ Sáu',color:'#5C8DB5',title:'Bảo tàng Abashiri, Trí tới buổi chiều',who:'Ba người buổi sáng, cả 4 từ chiều',mode:'Bus buổi sáng, chiều nhận xe',drive:0.5,night:'abashiri',cover:['tento',0],
-   segs:[{bus:1,pts:['mmb',[205,330],'abashiri']},{pts:['abashiri',[236,266],'tento',[205,264],'notoro',[232,246],'abashiri']}],
+  {id:'d19',date:'19/2',wd:'Thứ Sáu',color:'#5C8DB5',title:'Bảo tàng Abashiri, Trí tới lúc 15:30',who:'Ba người tới 15:30, sau đó cả 4',mode:'Bus ban ngày, chiều nhận xe',drive:0.5,night:'abashiri',cover:['tento',0],
+   segs:[{bus:1,pts:['mmb',[205,330],'abashiri']},{bus:1,pts:['abashiri',[236,266],'tento']},{pts:['abashiri',[232,246],'notoro']}],
    items:[
     {t:'07:00',x:'Quân, Quỳnh, Cụ bay AirDo từ Haneda (HND)'},
     {t:'08:45',x:'Hạ cánh sân bay Memanbetsu',st:'mmb'},
     {t:'09:10',x:'Bus sân bay vào ga JR Abashiri',s:'Khoảng 30 phút. Gửi hành lý ở khách sạn gần ga',st:'abashiri'},
     {t:'10:00',x:'Bảo tàng nhà tù Abashiri',s:'Đi bus tham quan bằng vé 1DAY, khoảng 2 giờ',st:'tento'},
     {t:'12:00',x:'Ăn trưa "cơm tù" ở nhà ăn trong bảo tàng nhà tù',st:'tento'},
-    {t:'13:00',x:'Bảo tàng băng trôi Okhotsk trên đỉnh đồi Tento',s:'Có phòng lạnh trưng bày băng trôi thật. Xong thì bắt bus về ga',st:'tento'},
-    {t:'14:00',x:'Trí tới, cả đoàn gặp nhau ở ga JR Abashiri',s:'Nhận xe ở quầy Toyota trong ga, tất cả người lái có mặt. [Trí: điền giờ tới]',st:'abashiri'},
-    {t:'14:30',x:'Bảo tàng Dân tộc phương Bắc Hokkaido',s:'Văn hoá Ainu và các dân tộc vùng cực, mở tới 16:30',st:'tento'},
+    {t:'13:00',x:'Bảo tàng băng trôi Okhotsk trên đỉnh đồi Tento',s:'Có phòng lạnh trưng bày băng trôi thật',st:'tento'},
+    {t:'14:00',x:'Bảo tàng Dân tộc phương Bắc Hokkaido',s:'Văn hoá Ainu và các dân tộc vùng cực. Bắt bus về ga trước 15:30',st:'tento'},
+    {t:'15:30',x:'Trí tới ga JR Abashiri, cả đoàn gặp nhau',st:'abashiri'},
+    {t:'15:45',x:'Nhận xe ở quầy Toyota trong ga',s:'Tất cả người sẽ lái có mặt. Quầy đóng 17:30',st:'abashiri'},
     {t:'16:15',x:'Ngắm hoàng hôn trên biển băng ở mũi Notoro',s:'Khoảng 20 phút lái xe, mặt trời lặn khoảng 16:50',st:'notoro'},
     {t:'Tối',x:'Nhận phòng, ăn tối, ngủ sớm',s:'Sáng mai đi tàu phá băng',st:'abashiri'}]},
   {id:'d20',date:'20/2',wd:'Thứ Bảy',color:'#2F6690',title:'Tàu phá băng, rồi snowshoe Ngũ Hồ',who:'Cả 4 người',mode:'Khoảng 2 giờ lái xe',drive:2,night:'utoro',cover:['abashiri',0],
@@ -100,13 +101,13 @@ const DAYS = [
     {t:'16:00',x:'Về Abashiri, đổ đầy xăng, nhận phòng',st:'abashiri'},
     {t:'17:00',x:'Trả xe ở quầy Toyota trong ga JR Abashiri',s:'Quầy đóng 17:30. Trả xe xong mới đi ăn uống',st:'abashiri'},
     {t:'18:00',x:'Bữa tối cuối: hải sản Okhotsk',s:'Gợi ý: 吉田三八商店 (hải sản giá vừa phải, cơm trứng cá hồi tràn bát), 五十集屋 (nướng than quanh bếp lò), 酒菜亭 喜八 (quán đông người địa phương, có zangi cá hồi và món cá voi). Đặt bàn trước',st:'abashiri'}]},
-  {id:'d23',date:'23/2',wd:'Thứ Ba',color:'#8FB0CC',title:'Bay về Tokyo',who:'Quân, Quỳnh, Cụ',mode:'Bus sân bay',drive:0,night:null,cover:['abashiri',1],
+  {id:'d23',date:'23/2',wd:'Thứ Ba',color:'#8FB0CC',title:'Cả đoàn bay về Haneda',who:'Cả 4 người',mode:'Bus sân bay',drive:0,night:null,cover:['abashiri',1],
    segs:[{bus:1,pts:['abashiri',[232,338],'mmb']}],
    items:[
     {t:'07:00',x:'Trả phòng, ra bến bus sân bay',s:'Bus chạy theo giờ chuyến bay, khoảng 30 phút. Có thể đi taxi nếu muốn chắc ăn',st:'abashiri'},
     {t:'08:15',x:'Tới sân bay Memanbetsu, làm thủ tục',st:'mmb'},
-    {t:'09:15',x:'Bay AirDo từ Memanbetsu về Haneda',s:'Tới Haneda lúc 11:10',st:'mmb'},
-    {t:'',x:'Trí bay về riêng',s:'[Trí: điền giờ bay về]'}]}
+    {t:'09:15',x:'Cả 4 người bay AirDo từ Memanbetsu về Haneda',st:'mmb'},
+    {t:'11:10',x:'Tới Haneda. Trí nối chuyến về sân bay Yamaguchi Ube (UBJ)',s:'[Trí: điền giờ bay HND → UBJ]'}]}
 ];
 
 /* Nơi nghỉ. Điền tên và link đặt phòng khi đã chốt. */
@@ -119,9 +120,9 @@ const STAYS = [
 
 /* Những thứ cần đặt trước. Đổi done:true khi đã đặt xong. */
 const BOOKINGS = [
-  {x:'Vé AirDo cho Quân, Quỳnh, Cụ',s:'HND 7:00 → MMB 8:45 ngày 19/2; MMB 9:15 → HND 11:10 ngày 23/2',done:false},
-  {x:'Vé đi và về của Trí',s:'Tới ga JR Abashiri khoảng 14:00 ngày 19/2',done:false},
-  {x:'Xe thuê Toyota, quầy trong ga JR Abashiri',s:'Nhận khoảng 14:00 ngày 19/2, trả trước 17:30 ngày 22/2. Nhận và trả cùng chỗ. Lốp tuyết, 4WD. Điện thoại 0152-67-6678',done:false},
+  {x:'Vé AirDo',s:'HND 7:00 → MMB 8:45 ngày 19/2 cho Quân, Quỳnh, Cụ; MMB 9:15 → HND 11:10 ngày 23/2 cho cả 4 người',done:false},
+  {x:'Vé của Trí',s:'Lượt đi tới ga JR Abashiri lúc 15:30 ngày 19/2; ngày 23/2 nối chuyến HND → UBJ sau 11:10',done:false},
+  {x:'Xe thuê Toyota, quầy trong ga JR Abashiri',s:'Nhận khoảng 15:45 ngày 19/2, trả trước 17:30 ngày 22/2. Nhận và trả cùng chỗ. Lốp tuyết, 4WD. Điện thoại 0152-67-6678',done:false},
   {x:'Vé bus sân bay và vé bus tham quan 1DAY',s:'Mua vé web của Abashiri Bus cho ba người sáng 19/2',done:false},
   {x:'Tàu phá băng Aurora',s:'Chuyến 9:30 ngày 20/2, 4 người',done:false},
   {x:'Tour snowshoe Ngũ Hồ Shiretoko mùa đông',s:'12:50 ngày 20/2, tối đa 8 người',done:false},

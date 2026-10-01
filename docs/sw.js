@@ -1,5 +1,5 @@
 /* Lưu trang để xem được khi mất sóng. Tăng số phiên bản khi sửa nội dung. */
-const CACHE = 'hokkaido-2027-v2';
+const CACHE = 'hokkaido-2027-v3';
 const ASSETS = ['./', './index.html', './assets/style.css', './assets/data.js', './assets/images.js', './assets/app.js', './assets/icon.svg', './manifest.webmanifest',
   './assets/img/abashiri-1.jpg', './assets/img/abashiri-2.jpg', './assets/img/akan-1.jpg', './assets/img/akan-2.jpg', './assets/img/akan-3.jpg', './assets/img/akan-4.jpg', './assets/img/akan-5.jpg', './assets/img/bihoro-1.jpg', './assets/img/goko-1.jpg', './assets/img/notsuke-1.jpg', './assets/img/notsuke-2.jpg', './assets/img/oshin-1.jpg', './assets/img/shari-1.jpg', './assets/img/shari-2.jpg', './assets/img/tento-1.jpg', './assets/img/tento-2.jpg', './assets/img/tento-3.jpg', './assets/img/utoro-1.jpg'];
 
