@@ -56,7 +56,7 @@ const todayId=dayIndex>=0&&dayIndex<DAYS.length?DAYS[dayIndex].id:null;
   if(dayIndex<0){el.innerHTML=`<b>${-dayIndex}</b><span>ngày nữa là đi</span>`}
   else if(todayId){el.innerHTML=`<b>Ngày ${dayIndex+1}/${DAYS.length}</b><span>Hôm nay ${DAYS[dayIndex].date}</span>`}
   else{el.innerHTML=`<b>Xong</b><span>chuyến đi đã kết thúc</span>`}
-  $('#drive-total').textContent='~'+DAYS.reduce((a,d)=>a+(d.drive||0),0);
+  $('#drive-total').textContent='~'+Math.round(DAYS.reduce((a,d)=>a+(d.drive||0),0));
 })();
 
 /* ---------- map ---------- */
@@ -188,7 +188,7 @@ function itemHTML(i,cur){
 }
 function panelAll(){
   return `<div class="p-kicker">Toàn tuyến</div>
-  <h3 class="p-title">Sáu ngày, năm đêm</h3>
+  <h3 class="p-title">${DAYS.length} ngày, ${DAYS.filter(d=>d.night).length} đêm</h3>
   <p class="p-lead">Chọn một ngày để xem lộ trình, hoặc bấm vào một điểm trên bản đồ.</p>
   <div class="daylist">${DAYS.map(d=>`<button type="button" class="dayrow" data-day="${d.id}"><span class="sw" style="background:${d.color}"></span><span class="d">${d.date}</span><span class="m"><b>${esc(d.title)}</b><span>${d.night?'Nghỉ đêm ở '+esc(S[d.night].short):'Bay về'}</span></span>${icoChev}</button>`).join('')}</div>`;
 }
@@ -335,7 +335,7 @@ $('#pack-reset').addEventListener('click',()=>{packed={};store.set(PK,packed);re
 /* ---------- share ---------- */
 const toast=msg=>{const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('show'),2200)};
 $('#share').addEventListener('click',async()=>{
-  const data={title:document.title,text:'Lịch trình Đông Hokkaido 25–30/12',url:location.href.split('#')[0]};
+  const data={title:document.title,text:'Lịch trình Đông Hokkaido 19–23/2/2027',url:location.href.split('#')[0]};
   try{
     if(navigator.share){await navigator.share(data);return}
     await navigator.clipboard.writeText(data.url);toast('Đã chép đường dẫn');
